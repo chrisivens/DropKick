@@ -110,6 +110,9 @@
       }
 
       // Build the dropdown HTML
+      dropdownTemplate = settings.dropdownTemplate ? settings.dropdownTemplate : dropdownTemplate;
+      optionTemplate = settings.optionTemplate ? settings.optionTemplate : optionTemplate;
+
       $dk = _build(dropdownTemplate, data);
 
       // Make the dropdown fixed width if desired
